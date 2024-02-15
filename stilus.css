@@ -1,0 +1,36 @@
+body {
+    margin: auto;
+}
+main {
+    display: grid;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "a a as"
+    "f f f";
+    border: solid;
+}
+header {
+    grid-area: h;
+    border: solid;
+}
+nav {
+    grid-area: n;
+    border: solid;
+}
+article {
+    grid-area: a;
+    border: solid;
+}
+aside {
+    grid-area: as;
+    border: solid;
+}
+footer {
+    grid-area: f;
+    border: solid;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
