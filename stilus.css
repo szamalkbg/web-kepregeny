@@ -1,36 +1,102 @@
 body {
-    margin: auto;
+    font-family: 'Bangers', cursive;
+    background-image: url(kepek/hatter2.jpg);
 }
-main {
-    display: grid;
-    grid-template-areas: 
-    "h h h"
-    "n n n"
-    "a a as"
-    "f f f";
-    border: solid;
+
+* p {
+    color: aliceblue;
 }
-header {
-    grid-area: h;
-    border: solid;
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
 }
-nav {
-    grid-area: n;
-    border: solid;
+
+header, nav {
+    border-bottom: 2px solid blue;
+    margin-bottom: 15px;
 }
-article {
-    grid-area: a;
-    border: solid;
-}
-aside {
-    grid-area: as;
-    border: solid;
-}
-footer {
-    grid-area: f;
-    border: solid;
-}
-a {
+
+nav a {
+    color: blue;
     text-decoration: none;
-    color: black;
+    border: 2px solid blue;
+}
+
+nav a:hover {
+    color: red;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 15px;
+    border: 2px solid blue;
+}
+
+label, legend {
+    color: aliceblue;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+}
+
+input[type=text], input[type=number], input[type=date], textarea {
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: #000;
+    border: 2px solid blue;
+    color: aliceblue;
+    width: 100%;
+}
+
+.checkbox-group, fieldset {
+    margin-bottom: 15px;
+}
+
+.checkbox-group label, fieldset label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: aliceblue;
+    border: 2px solid blue;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: blue;
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+    }
 }

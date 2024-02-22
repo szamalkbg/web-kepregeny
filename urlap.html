@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urlap</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Urlap a kepregenyhez">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="BG">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <header>
+        <h1>Értékelés</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Képregény</a></li>
+            <li><a href="urlap.html">Űrlap</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <form>
+            <label for="nev">Neved:</label>
+            <input type="text" id="nev" name="nev">
+
+            <label for="tortenet-ertekeles">Mennyire tetszett a képregény története 1-től 5-ig:</label>
+            <input type="number" id="tortenet-ertekeles" name="tortenet-ertekeles" min="1" max="5">
+
+            <label for="kepek-ertekeles">Mennyire tetszett a képregény képei 1-től 5-ig:</label>
+            <input type="number" id="kepek-ertekeles" name="kepek-ertekeles" min="1" max="5">
+
+            <label for="legkevesbe">Mi tetszett benne a legkevésbé:</label>
+            <textarea id="legkevesbe" name="legkevesbe"></textarea>
+
+            <label for="legjobban">Mi tetszett a legjobban:</label>
+            <textarea id="legjobban" name="legjobban"></textarea>
+
+            <label for="publikalas-datum">Mikorra tegyem publikussá a képregényt:</label>
+            <input type="date" id="publikalas-datum" name="publikalas-datum">
+
+            <fieldset>
+                <legend>Mely panelek tetszettek a legjobban?</legend>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="panel-1" value="1">1. Panel</label>
+                    <label><input type="checkbox" name="panel-2" value="2">2. Panel</label>
+                    <label><input type="checkbox" name="panel-3" value="3">3. Panel</label>
+                    <label><input type="checkbox" name="panel-4" value="4">4. Panel</label>
+                    <label><input type="checkbox" name="panel-5" value="5">5. Panel</label>
+                    <label><input type="checkbox" name="panel-6" value="6">6. Panel</label>
+                    <label><input type="checkbox" name="panel-7" value="7">7. Panel</label>
+                    <label><input type="checkbox" name="panel-8" value="8">8. Panel</label>
+                    <label><input type="checkbox" name="panel-9" value="9">9. Panel</label>
+                    <label><input type="checkbox" name="panel-10" value="10">10. Panel</label>
+                    <label><input type="checkbox" name="panel-11" value="11">11. Panel</label>
+                    <label><input type="checkbox" name="panel-12" value="12">12. Panel</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Összeségében tetszett a képregény?</legend>
+                <label><input type="radio" name="osszessegeben-tetszett" value="igen"> Igen</label>
+                <label><input type="radio" name="osszessegeben-tetszett" value="nem"> Nem</label>
+                
+            </fieldset>
+
+            <button type="submit">Küldés</button>
+        </form>
+    </div>
+    <footer>
+        <p>Boldizsár Gergely</p>
+    </footer>
+</body>
+</html>
