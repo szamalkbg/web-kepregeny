@@ -3,7 +3,7 @@ body {
     background-image: url(kepek/hatter2.jpg);
 }
 
-* p {
+* p, label, legend {
     color: aliceblue;
 }
 
@@ -15,7 +15,7 @@ nav ul {
     padding: 0;
 }
 
-header, nav {
+header, nav, footer p {
     border-bottom: 2px solid blue;
     margin-bottom: 15px;
 }
@@ -31,7 +31,7 @@ nav a:hover {
 }
 
 h1 {
-    color: aliceblue;
+    color: white;
     text-align: center;
 }
 
@@ -43,10 +43,6 @@ footer p {
     text-align: center;
     margin-top: 15px;
     border: 2px solid blue;
-}
-
-label, legend {
-    color: aliceblue;
 }
 
 .form-container {
@@ -99,4 +95,31 @@ button:hover {
     .form-container {
         width: 90%;
     }
+}
+.kepregenyflex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.kepregeny {
+    width: 300px;
+    border: 5px solid darkblue;
+    transition: border-color 0.3s;
+    background-color: black;
+}
+  
+.kepregeny:hover {
+    border-color: red;
+}
+  
+.kepregeny img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+  
+.kepregeny p {
+    text-align: center;
 }
