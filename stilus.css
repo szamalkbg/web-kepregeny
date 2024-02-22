@@ -62,9 +62,9 @@ form {
 input[type=text], input[type=number], input[type=date], textarea {
     margin-bottom: 15px;
     padding: 8px;
-    background-color: #000;
+    background-color: #000000;
     border: 2px solid blue;
-    color: aliceblue;
+    color: white;
     width: 100%;
 }
 
